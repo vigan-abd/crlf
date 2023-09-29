@@ -1,0 +1,27 @@
+{
+  "name": "@vigan-abd/crlf",
+  "version": "1.0.0",
+  "description": "A CLI tool to convert line endings in files based on glob patterns.",
+  "main": "convert.js",
+  "scripts": {
+    "lint": "standard",
+    "format": "standard --fix",
+    "test": "npm run lint && npm run unit",
+    "unit": "mocha"
+  },
+  "author": "vigan.abd",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "glob": "^7.1.7",
+    "prompt": "^1.3.0",
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "crlf": "./bin/crlf.js"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "sinon": "^16.0.0",
+    "standard": "^17.1.0"
+  }
+}
